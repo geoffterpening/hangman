@@ -50,10 +50,10 @@ while play_again == 'y':
                 ""
 
             if len(guessed_letters) != 0:
-                print("Word1: "+correct_letters)
+                print("Word: "+correct_letters)
                 # print("test")
             else:
-                print("Word2: "+correct_letters)
+                print("Word: "+correct_letters)
 
             guess_letter = input("Make a guess: ")
             if len(guess_letter) == 1:
@@ -77,7 +77,7 @@ while play_again == 'y':
                                 working_correct_letters = working_correct_letters+correct_letters[count_num]
                             count_num += 1
                         correct_letters = working_correct_letters
-                        print("\n\nWord3: "+correct_letters)
+                        # print("\n\nWord: "+correct_letters)
                         count_num = 0
 
 
@@ -86,10 +86,9 @@ while play_again == 'y':
 
                         print("You got it right! ")
                         if len(word_letters) == 0:
-                            print("done")
                             break
                         else:
-                            print("else")
+                            ""
                     else:
                         guesses += 1
                         print("\n\nYou got it wrong")
