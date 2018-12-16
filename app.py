@@ -34,29 +34,26 @@ while play_again == 'y':
     # Intro stuff
     print("\n\n------------------")
     print("-----HANGMAN------")
-    print("------------------\n\nYou know how this works already, just play the game!\n")
+    print("------------------\n\nPlay the game!\n")
     input("Ready? press enter to continue...")
 
     # Guessing loop
-    while guesses < guess_limit:
+    while guesses < guess_limit and len(word_letters) != 0:
         while len(word_letters) > 0:
-            print(ill_list[guesses])
-            # *******************put underscores with the letters guessed in the right spot**************
-            print("You have " + str(guess_limit - guesses) + " guesses left")
-
+            print(ill_list[guesses]+"\n")
+            # letters guessed
             if len(guessed_letters) != 0:
-                print("letters guessed: "+str(guessed_letters))
+                print("letters guessed: " + ", ".join(guessed_letters))
                 # print(guessed_letters)
+                print("You have " + str(guess_limit - guesses) + " guesses left\n")
             else:
                 ""
-            # debug stuff:
-            print(str(word) + " ||| " + str(word_letters))
-            # /debug stuff
+
             if len(guessed_letters) != 0:
-                print(correct_letters)
+                print("Word1: "+correct_letters)
                 # print("test")
             else:
-                print("_" * len(grab_word))
+                print("Word2: "+correct_letters)
 
             guess_letter = input("Make a guess: ")
             if len(guess_letter) == 1:
@@ -71,32 +68,34 @@ while play_again == 'y':
                         # ^Drops guessed letter from word_letters
 
                         # Make the updated _li_t in correct_letters-----------------------***
-
-                        print("".join(correct_letters))
-                        for letter in grab_word:
-                            if letter in guess_letter:
-                                letter = guess_letter
+                        count_num = 0
+                        working_correct_letters = ""
+                        for letter in correct_letters:
+                            if grab_word[count_num] == guess_letter:
+                                working_correct_letters = working_correct_letters+guess_letter
                             else:
-                                ""
-                        # ^drops all instances of guess_letter out of the word_letters list
+                                working_correct_letters = working_correct_letters+correct_letters[count_num]
+                            count_num += 1
+                        correct_letters = working_correct_letters
+                        print("\n\nWord3: "+correct_letters)
+                        count_num = 0
+
 
                         word = "".join(word_letters)
                         # ^ joins it all back into a single shorter string
 
-                        # debug stuff
-                        print(str(word_letters)+"   |||   "+str(word))
-                        # /debug stuff
-
                         print("You got it right! ")
+                        if len(word_letters) == 0:
+                            print("done")
+                            break
+                        else:
+                            print("else")
                     else:
-                        # debug stuff
-                        print(str(word) + "   |||   " + str(word_letters))
-                        # /debug stuff
                         guesses += 1
                         print("\n\nYou got it wrong")
                         break
                 else:
-                    print("you already guessed that")
+                    print("\n\nyou already guessed that...")
 
             else:
                 print("\nPlease guess one letter at a time...")
@@ -106,12 +105,13 @@ while play_again == 'y':
         print("\nYou win!")
     else:
         print("\nYou lose!")
+        print("The word you were looking for was "+"\""+grab_word+"\"\n")
     # play again
     while True:
         play_again = input("Play again? y/n: ")
+        guesses = 0
+        guessed_letters = []
         if play_again not in["y", "n"]:
-
-            # This makes the player lose LOL-----------------------------------------------*******
             print("\nPlease give a yes or no response\n")
         else:
             break

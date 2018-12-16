@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03fffb17-1a9f-475a-b300-bb5313b3fc3f" name="Default Changelist" comment="brain too tired.">
+    <list default="true" id="03fffb17-1a9f-475a-b300-bb5313b3fc3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="238">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -44,6 +44,14 @@
       <find>&quot;\n        &quot;\</find>
       <find>ill_</find>
       <find>join</find>
+      <find>character</find>
+      <find>ill</find>
+      <find>&quot;_&quot;</find>
+      <find>word</find>
+      <find>word2</find>
+      <find>|||</find>
+      <find>letters guessed</find>
+      <find>left</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;\n|</replace>
@@ -190,20 +198,26 @@
       <option name="project" value="LOCAL" />
       <updated>1544895926926</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="brain too tired. need to probably enumerate something. start on line 74. need to make the _li_s_t_ work gooder.">
+      <created>1544917100327</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544917100328</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25635877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25970548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26619717" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41267607" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -212,6 +226,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32957748" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,7 +238,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="Basic shell, no word compare mechanics yet" />
     <MESSAGE value="Lots of the game mechanic. &#10;Needs to show correct letters like this _o_d&#10;Perhaps show &quot;wrong letters guessed&quot; instead of &quot;all letters guessed&quot;&#10;Need to make it so one guessed letter kills all instances of that letter, instead of the first instance&#10;&#10;need to make nicer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of the game mechanic. &#10;Needs to show correct letters like this _o_d&#10;Perhaps show &quot;wrong letters guessed&quot; instead of &quot;all letters guessed&quot;&#10;Need to make it so one guessed letter kills all instances of that letter, instead of the first instance&#10;&#10;need to make nicer" />
+    <MESSAGE value="brain too tired. need to probably enumerate something. start on line 74. need to make the _li_s_t_ work gooder." />
+    <option name="LAST_COMMIT_MESSAGE" value="brain too tired. need to probably enumerate something. start on line 74. need to make the _li_s_t_ work gooder." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../dice_roller/app.py">
@@ -249,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="238">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
