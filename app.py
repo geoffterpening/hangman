@@ -114,6 +114,6 @@ while play_again == 'y':
             print("\nPlease give a yes or no response\n")
         else:
             break
-print("\n\nGood day to you! Now off you fuck!")
+print("\n\n")
 input("\nPress any key to quit: ")# User input section
 
